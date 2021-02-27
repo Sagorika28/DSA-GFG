@@ -1,5 +1,6 @@
 // Given n non-negative integers representing an elevation map where the width of each bar is 1,
 // compute how much water it is able to trap after raining.
+// Time complexity - O(n*n)
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -28,10 +29,10 @@ int find_right_max(vector<int> arr, int n, int i)
 int rainwater_trapped(vector<int> arr, int n)
 {
     int total_water = 0;
-    for (int i = 1; i < n - 1; i++) //ignoring the 1st and last index as they cant store water
+    for (int i = 1; i < n - 1; i++) //ignoring the 1st and last index as they cant store water - O(n)
     {
-        int left_max = find_left_max(arr, n, i);
-        int right_max = find_right_max(arr, n, i);
+        int left_max = find_left_max(arr, n, i);            // O(n)
+        int right_max = find_right_max(arr, n, i);          // O(n)
         total_water += min(left_max, right_max) - arr[i];
     }
     return total_water;
