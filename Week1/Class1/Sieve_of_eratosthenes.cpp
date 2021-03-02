@@ -15,7 +15,7 @@ int main(int argc, char const *argv[])
     {
         if (prime[j]) 
         {
-            for (int p = 2 * j; p <= n; p += 2)  //marking multiples of prime nos. as false
+            for (int p = 2 * j; p <= n; p += j)  //marking multiples of prime nos. as false
             {
                 if (p % j == 0)
                     prime[p] = false;
