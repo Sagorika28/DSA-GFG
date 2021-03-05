@@ -1,4 +1,4 @@
-// Given a positive integer value N. The task is to find how many numbers less than or equal to N have
+// Given a positive integer value N. The task is to find how many number less than or equal to N have
 // number of divisors exactly equal to 3.  T = O(n/2 * n/4)  ,  S = O(1)
 #include <iostream>
 using namespace std;
