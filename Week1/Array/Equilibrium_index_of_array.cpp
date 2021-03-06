@@ -9,7 +9,7 @@ int equi_index(int arr[], int n)
 {
     int sum = 0, left_sum = 0;
     for (int i = 0; i < n; i++)
-        sum = +arr[i];
+        sum =+ arr[i];
 
     for (int i = 0; i < n; i++)
     {
