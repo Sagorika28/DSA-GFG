@@ -35,13 +35,13 @@ public:
 
             val = abs(arr[i]) - 1;
             // cout<<val<<":"<<arr[val]<<" "
-            if (val < n && arr[val] > 0)
+            if (val < n && arr[val] > 0) // array index exists and arr[val] has not been modified yet (to ignore the effect of duplicate values in array)
             {
                 arr[val] = -arr[val];
             }
             //cout<<val<<":"<<arr[val]<<" ";
         }
-        
+
         // after whole array is traversed check which first element in array is positive and return its index
         for (int i = 0; i < n; i++)
         {
