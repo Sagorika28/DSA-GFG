@@ -54,7 +54,7 @@ int main()
 // }
 
 // //alternate for lower_bound :-
-// int last(int arr[], int low, int high, int x, int n)   --- low = 0, high = n-1
+// int first(int arr[], int low, int high, int x, int n)   --- low = 0, high = n-1
 // {
 //     if (high >= low)
 //     {
