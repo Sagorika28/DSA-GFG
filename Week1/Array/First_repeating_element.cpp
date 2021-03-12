@@ -1,6 +1,6 @@
 // Given an array arr[] of size N, find the first repeating element.
 // The element should occurs more than once and the index of its first occurrence should be the smallest.
-// T=O(n log n), S=O(n)
+// T=O(n), S=O(n)
 
 #include <bits/stdc++.h>
 using namespace std;
