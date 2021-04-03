@@ -1,6 +1,7 @@
 // Given n non-negative integers representing an elevation map where the width of each bar is 1,
 // compute how much water it is able to trap after raining.
-// Time complexity - O(n*n)
+// Time complexity - O(n)
+// Space complexity - O(n)
 #include <iostream>
 #include <vector>
 #include <algorithm>
