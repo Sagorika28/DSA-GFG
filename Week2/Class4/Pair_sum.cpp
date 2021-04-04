@@ -1,4 +1,4 @@
-// Write a program that, given an array A[] of n numbers and another number x, determines whether or not there exist two elements in S whose sum is exactly x.
+// Write a program that, given an array A[] of n numbers and another number x, determines whether or not there exist two elements in A whose sum is exactly x.
 // 1. Use 2 loops   ----  T=O(n*n) , S=O(1)
 // 2. Sort the array and use the 2 pointers approach from start and end to chcek if they are equal to sum or not    ----  T=O(n logn) , S=O(1)
 // 3. Use hashing to find the 2nd element if it exits.    ----  T=O(n) , S=O(n)
