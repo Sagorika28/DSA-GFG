@@ -1,3 +1,4 @@
+//T(n) = O(n log n)   ---- O(n) for making heap and O(log n) for heapify
 #include <iostream>
 using namespace std;
 
