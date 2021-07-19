@@ -25,7 +25,7 @@ public:
 
     int missing_part(int arr[], int n)
     {
-        // traverse the remaining postive side of array
+        // traverse the remaining positive side of array
         int val = 0;
 
         for (int i = 0; i < n; i++)
@@ -34,12 +34,10 @@ public:
             // if that index is not a part of the array, then simply move to the next iteration of loop
 
             val = abs(arr[i]) - 1;
-            // cout<<val<<":"<<arr[val]<<" "
             if (val < n && arr[val] > 0) // array index exists and arr[val] has not been modified yet (to ignore the effect of duplicate values in array)
             {
                 arr[val] = -arr[val];
             }
-            //cout<<val<<":"<<arr[val]<<" ";
         }
 
         // after whole array is traversed check which first element in array is positive and return its index
@@ -48,14 +46,12 @@ public:
             if (arr[i] > 0)
                 return i + 1;
         }
-        // else if all are negative, return n+1
+        // else if all are negative, return n+1 (smallest number can be n+1 if all 1 to n elements are present in the array)
         return n + 1;
     }
 
     int findMissing(int arr[], int n)
     {
-        // smallest number can either be 1-n or n+1 if all 1-n elements are present in the array
-
         // store the negative elements and 0 in the left side of the array
         int start = segregate_array(arr, n);
         // find missing part
